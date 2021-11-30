@@ -18,4 +18,12 @@ public class Dokev : MonoBehaviour
         animator.SetTrigger("Die");
         Destroy(gameObject, 2.0f);
     }
+
+    protected void Attack()
+    {
+        GetComponent<Mover>().Move(false);
+        animator.SetTrigger("Attack 02");
+        Destroy(gameObject, 1.0f);
+    }
+
 }

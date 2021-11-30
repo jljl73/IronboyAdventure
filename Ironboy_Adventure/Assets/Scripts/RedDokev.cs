@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class RedDokev : Dokev
 {
-    void Attack()
-    {
-        animator.SetTrigger("Attack 01");
-    }
-
+    
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("PlayerAttack"))
@@ -16,6 +12,5 @@ public class RedDokev : Dokev
 
         else if (other.CompareTag("Player"))
             Attack();
-
     }
 }
