@@ -1,0 +1,1443 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.17f1 (03b40fe07a36) revision 242703'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1348; Version 2009; 64bit' Language: 'ko' Physical Memory: 16281 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.1.17f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/IronboyAdventure/Ironboy_Adventure
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+61287
+Successfully changed project path to: D:/IronboyAdventure/Ironboy_Adventure
+D:/IronboyAdventure/Ironboy_Adventure
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 63.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.17f1 (03b40fe07a36)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.17f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/IronboyAdventure/Ironboy_Adventure/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
+    Vendor:   NVIDIA
+    VRAM:     2988 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.17f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.17f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56784
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001357 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 66.29 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.505 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1505ms)
+		BeginReloadAssembly (56ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (359ms)
+			LoadAssemblies (53ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (118ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (179ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (66ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (82ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002575 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.926 seconds
+Domain Reload Profiling:
+	ReloadAssembly (927ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (763ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (245ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (341ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (272ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2949 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 115.8 MB.
+System memory in use after: 115.9 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3408.
+Total: 3.780900 ms (FindLiveObjects: 0.497600 ms CreateObjectMapping: 0.128500 ms MarkObjects: 3.007400 ms  DeleteObjects: 0.145300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Resources/Meshtint Free Knight/Read me.txt
+  artifactKey: Guid(a39cc63bc596d794f978a53d1dd5cf34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Meshtint Free Knight/Read me.txt using Guid(a39cc63bc596d794f978a53d1dd5cf34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab55d5bd0cff733bfe1987019c0a4082') in 0.027419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 500.089885 seconds.
+  path: Assets/Resources/Meshtint Free Knight/UI
+  artifactKey: Guid(a83cdd064b39dad488b269f234bee7d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Meshtint Free Knight/UI using Guid(a83cdd064b39dad488b269f234bee7d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5d292a252747ee32624d0a88494a024') in 0.004661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.366360 seconds.
+  path: Assets/Resources/Meshtint Free Knight/UI/Important!!! Read me.prefab
+  artifactKey: Guid(2eb6d9a882a95a54f97244f20bddea01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Meshtint Free Knight/UI/Important!!! Read me.prefab using Guid(2eb6d9a882a95a54f97244f20bddea01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1cb13d20d29925034683d5c7c3412a5') in 0.034062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 87.759498 seconds.
+  path: Assets/IA/Scenes
+  artifactKey: Guid(e9973f375bcd54c4cae1ae246ecd4160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IA/Scenes using Guid(e9973f375bcd54c4cae1ae246ecd4160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dba24e9f9addf766cd21a7f052c24c3b') in 0.002695 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.447114 seconds.
+  path: Assets/IA/Scenes/PlayerTest.unity
+  artifactKey: Guid(a81aa2e0d203bbf44b2256a5360ef415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IA/Scenes/PlayerTest.unity using Guid(a81aa2e0d203bbf44b2256a5360ef415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd63164c4835a91894ff0b73a1843cd8') in 0.006392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.401323 seconds.
+  path: Assets/Resources/Meshtint Free Knight/Controllers/Meshtint Free Knight.controller
+  artifactKey: Guid(d05c65343761305459dd4f72d1f51309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Meshtint Free Knight/Controllers/Meshtint Free Knight.controller using Guid(d05c65343761305459dd4f72d1f51309) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dccb03223f44cfaeb50c38edf87b2fae') in 0.012206 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.574268 seconds.
+  path: Assets/Resources/Meshtint Free Knight/Prefabs
+  artifactKey: Guid(dd7ad1f08d7a33f41abc3b1b43909c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Meshtint Free Knight/Prefabs using Guid(dd7ad1f08d7a33f41abc3b1b43909c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8015f8a8d890d9fa3efaf4a96d59453') in 0.002673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.033248 seconds.
+  path: Assets/Resources/Meshtint Free Knight/FBX
+  artifactKey: Guid(618a8ebb41a30664d9e572399c24f307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Meshtint Free Knight/FBX using Guid(618a8ebb41a30664d9e572399c24f307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90231ebfbfb21b1df492678e59112359') in 0.006149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.421800 seconds.
+  path: Assets/Resources/Meshtint Free Knight/Materials
+  artifactKey: Guid(8c20f866a97c9de4eace1ced629ece77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Meshtint Free Knight/Materials using Guid(8c20f866a97c9de4eace1ced629ece77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e29fc0588f2c913bc98ebef7b566c3a') in 0.006549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.411365 seconds.
+  path: Assets/Resources/Meshtint Free Knight/FBX/Sword.FBX
+  artifactKey: Guid(17e462df654aa664683c1e9f5eed62bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Meshtint Free Knight/FBX/Sword.FBX using Guid(17e462df654aa664683c1e9f5eed62bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef33537a77092168662dc16390c757e3') in 0.092542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.297237 seconds.
+  path: Assets/Resources/Meshtint Free Knight/FBX/Meshtint Free Knight@Battle Idle.FBX
+  artifactKey: Guid(db4eaab5d375e8844851ce3cf2165adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Meshtint Free Knight/FBX/Meshtint Free Knight@Battle Idle.FBX using Guid(db4eaab5d375e8844851ce3cf2165adc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '864f0fbd9c59806b1473d739eec89441') in 0.034096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.254740 seconds.
+  path: Assets/Resources/Meshtint Free Knight/FBX/Meshtint Free Knight.FBX
+  artifactKey: Guid(445581dbfbbea06408d552fa1aca77fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Meshtint Free Knight/FBX/Meshtint Free Knight.FBX using Guid(445581dbfbbea06408d552fa1aca77fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9901bea15c75822b7266e69851fe060a') in 0.024933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 102.007529 seconds.
+  path: Assets/Resources/Meshtint Free Knight/Scenes/Ortho Scene.unity
+  artifactKey: Guid(b51e6e700bd47944a8ecc7b69b72ac1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Meshtint Free Knight/Scenes/Ortho Scene.unity using Guid(b51e6e700bd47944a8ecc7b69b72ac1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '694200d646c44ced1d7ed6baf01c5b73') in 0.006852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.324096 seconds.
+  path: Assets/Resources/Meshtint Free Knight/Scenes/3rd Person Controller.unity
+  artifactKey: Guid(0e38c937b3611904c9badaf3865ae050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Meshtint Free Knight/Scenes/3rd Person Controller.unity using Guid(0e38c937b3611904c9badaf3865ae050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79c6ff3b89e81c31984d2a02b3e722a4') in 0.005971 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002818 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.943 seconds
+Domain Reload Profiling:
+	ReloadAssembly (944ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (780ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (261ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (329ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (46ms)
+				ProcessInitializeOnLoadAttributes (269ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2943 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.4 MB.
+System memory in use after: 133.6 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3424.
+Total: 2.522300 ms (FindLiveObjects: 0.170800 ms CreateObjectMapping: 0.085700 ms MarkObjects: 2.234600 ms  DeleteObjects: 0.030100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 266.090013 seconds.
+  path: Assets/Resources/Meshtint Free Knight/Textures
+  artifactKey: Guid(822b2da83b7586c41a96ebabc1480089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Meshtint Free Knight/Textures using Guid(822b2da83b7586c41a96ebabc1480089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '618cbfaf2414e2e57a856e03a5a32235') in 0.007376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.641607 seconds.
+  path: Assets/Resources/Meshtint Free Knight/Tutorials
+  artifactKey: Guid(4e97e120620873d44a52b11f61c8353a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Meshtint Free Knight/Tutorials using Guid(4e97e120620873d44a52b11f61c8353a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd555c2cff89d69ec95c86c58978b231') in 0.007102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.940847 seconds.
+  path: Assets/Resources/Meshtint Free Knight/Tutorials/Meshtint Free Knight Tutorial.pdf
+  artifactKey: Guid(661e3dc0732785243a2ff779154b1166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Meshtint Free Knight/Tutorials/Meshtint Free Knight Tutorial.pdf using Guid(661e3dc0732785243a2ff779154b1166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3a0550662bb31fe18c4b082e6260d28') in 0.016988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.596678 seconds.
+  path: Assets/Resources/Meshtint Free Knight/Tutorials/PNG
+  artifactKey: Guid(b63384b497e3ca84c9710a9d95dcf618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Meshtint Free Knight/Tutorials/PNG using Guid(b63384b497e3ca84c9710a9d95dcf618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e61e76a1946ffbeb0433f93bec03db') in 0.005371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 108.045384 seconds.
+  path: Assets/IA/Scenes/PlayerTest.unity
+  artifactKey: Guid(a81aa2e0d203bbf44b2256a5360ef415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IA/Scenes/PlayerTest.unity using Guid(a81aa2e0d203bbf44b2256a5360ef415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60e59d4706dfe401ca84c95b0fd60190') in 0.005382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 96.565278 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)
+  artifactKey: Guid(e2621a599350bb54782de4b80d62b836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported) using Guid(e2621a599350bb54782de4b80d62b836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9a4ce582fd46e58b73dd6b539d4b16a') in 0.008225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.795680 seconds.
+  path: Assets/Resources/Adventurer Aland/Materials
+  artifactKey: Guid(7b436cbe8b4a5df48b4c57b069471cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Materials using Guid(7b436cbe8b4a5df48b4c57b069471cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b16186b88e7b5da025ba4ae96bbb7eb5') in 0.005304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.333876 seconds.
+  path: Assets/Resources/Adventurer Aland/Prefabs
+  artifactKey: Guid(9b90883a1769cde4684d21900c591396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Prefabs using Guid(9b90883a1769cde4684d21900c591396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a81dccc8df947f29dfedc2aa1f156073') in 0.005275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.450311 seconds.
+  path: Assets/Resources/Adventurer Aland/Prefabs/Adventurer Aland Blue.prefab
+  artifactKey: Guid(6476eae1e9db93d418ce447bd2f2cadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Prefabs/Adventurer Aland Blue.prefab using Guid(6476eae1e9db93d418ce447bd2f2cadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdcb6bbc66b8b2b022c66b7623e9de06') in 0.046647 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002793 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.985 seconds
+Domain Reload Profiling:
+	ReloadAssembly (986ms)
+		BeginReloadAssembly (120ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (813ms)
+			LoadAssemblies (82ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (271ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (349ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (286ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2943 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.5 MB.
+System memory in use after: 133.7 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3428.
+Total: 2.612300 ms (FindLiveObjects: 0.177200 ms CreateObjectMapping: 0.101400 ms MarkObjects: 2.306200 ms  DeleteObjects: 0.026100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 65.816652 seconds.
+  path: Assets/Resources/Adventurer Aland/Scenes/3rd Person Controller Scene.unity
+  artifactKey: Guid(01821ea496836f3468051212a40d7657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Scenes/3rd Person Controller Scene.unity using Guid(01821ea496836f3468051212a40d7657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2edb1a86ab96c610794bfaf6620099d') in 0.016196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.711080 seconds.
+  path: Assets/Resources/Adventurer Aland/Scenes/Showcase.unity
+  artifactKey: Guid(e1705fcebfc7d7e4cabeff65d92346be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Scenes/Showcase.unity using Guid(e1705fcebfc7d7e4cabeff65d92346be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bcfafe8be0ef571a3bd780b6569abf1') in 0.005346 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002507 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.878 seconds
+Domain Reload Profiling:
+	ReloadAssembly (878ms)
+		BeginReloadAssembly (109ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (723ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (239ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (310ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (43ms)
+				ProcessInitializeOnLoadAttributes (252ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2943 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.5 MB.
+System memory in use after: 133.7 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3431.
+Total: 2.894000 ms (FindLiveObjects: 0.289000 ms CreateObjectMapping: 0.078700 ms MarkObjects: 2.505300 ms  DeleteObjects: 0.018400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 112.901258 seconds.
+  path: Assets/Resources/Adventurer Aland/READ ME
+  artifactKey: Guid(fd540724b504e8949856c72e262a72c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/READ ME using Guid(fd540724b504e8949856c72e262a72c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '119019e127dd06264549b1b84d972e7c') in 0.011510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.297023 seconds.
+  path: Assets/Resources/Adventurer Aland
+  artifactKey: Guid(5f46d6ed2f899fc49812a742c2f46be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland using Guid(5f46d6ed2f899fc49812a742c2f46be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99cecabda654511c38de9e5731d3ae5b') in 0.006533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.877235 seconds.
+  path: Assets/Resources/Adventurer Aland/Scenes
+  artifactKey: Guid(cd397affa41d525488ecbd81d4093147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Scenes using Guid(cd397affa41d525488ecbd81d4093147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55b40210519c6d37b27251c9eb771c04') in 0.005304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.432535 seconds.
+  path: Assets/Resources/Adventurer Aland/READ ME/Meshtint Read Me (A2).pdf
+  artifactKey: Guid(17df4d9f49c41d54d8d9d0c4fea78362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/READ ME/Meshtint Read Me (A2).pdf using Guid(17df4d9f49c41d54d8d9d0c4fea78362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a92a2f596ef77472217ac9e1e69df86') in 0.012625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1426.631429 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/Animators/Adventurer Aland.controller
+  artifactKey: Guid(a62953730dedb0045bd094ae4ee02c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/Animators/Adventurer Aland.controller using Guid(a62953730dedb0045bd094ae4ee02c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fafd666519157e7d2bb561e60c27eed3') in 0.015518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.291559 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Attack 02.FBX
+  artifactKey: Guid(64025549f08d91c4ba46b84b646510c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Attack 02.FBX using Guid(64025549f08d91c4ba46b84b646510c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8053747040d9c47377ffe6bb93de167') in 0.080659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.136311 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland.FBX
+  artifactKey: Guid(bf416c38a6abfc3499702bd9411cb0a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland.FBX using Guid(bf416c38a6abfc3499702bd9411cb0a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9aa1ef980a8b2cafb74fba96f779a0b') in 0.021009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.638327 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/Animators/Demo Aland.controller
+  artifactKey: Guid(c54398003d275fa4db6d7f6ebf664957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/Animators/Demo Aland.controller using Guid(c54398003d275fa4db6d7f6ebf664957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84536d599596374c10244c1d814de46f') in 0.014852 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003013 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.033 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1033ms)
+		BeginReloadAssembly (127ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (853ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (286ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (364ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (48ms)
+				ProcessInitializeOnLoadAttributes (300ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2943 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.1 MB.
+System memory in use after: 134.3 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3435.
+Total: 2.815300 ms (FindLiveObjects: 0.175400 ms CreateObjectMapping: 0.093300 ms MarkObjects: 2.495200 ms  DeleteObjects: 0.050000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002847 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.999 seconds
+Domain Reload Profiling:
+	ReloadAssembly (999ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (838ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (280ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (359ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (292ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2943 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.1 MB.
+System memory in use after: 134.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3438.
+Total: 2.751100 ms (FindLiveObjects: 0.191700 ms CreateObjectMapping: 0.092500 ms MarkObjects: 2.447100 ms  DeleteObjects: 0.018500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 406.294628 seconds.
+  path: Assets/IA/Scenes/PlayerTest.unity
+  artifactKey: Guid(a81aa2e0d203bbf44b2256a5360ef415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IA/Scenes/PlayerTest.unity using Guid(a81aa2e0d203bbf44b2256a5360ef415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf4eccef8a5ca2df3d9581a0b31a34dd') in 0.015174 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002665 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.970 seconds
+Domain Reload Profiling:
+	ReloadAssembly (970ms)
+		BeginReloadAssembly (112ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (805ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (271ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (342ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (280ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2943 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.1 MB.
+System memory in use after: 134.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3441.
+Total: 2.531900 ms (FindLiveObjects: 0.176000 ms CreateObjectMapping: 0.083800 ms MarkObjects: 2.252400 ms  DeleteObjects: 0.018400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 110.495950 seconds.
+  path: Assets/IA/Player
+  artifactKey: Guid(8d1885a36526a0e4198820a1671d0976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IA/Player using Guid(8d1885a36526a0e4198820a1671d0976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f686779a1f7f5e2b0b39236eed59d549') in 0.009174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.031486 seconds.
+  path: Assets/Resources/Adventurer Aland/FBX/Adventurer Aland 02.FBX
+  artifactKey: Guid(b962d585c627b6a4aa97de97c01c3f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/FBX/Adventurer Aland 02.FBX using Guid(b962d585c627b6a4aa97de97c01c3f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '074979c16202c9c7e6d720f6d8fc3f38') in 0.065288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.670554 seconds.
+  path: Assets/Resources/Adventurer Aland/FBX
+  artifactKey: Guid(5db6760d43272cc4a999ba776b6a4fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/FBX using Guid(5db6760d43272cc4a999ba776b6a4fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6a709d6fe957e3951f1e05fb1c3303e') in 0.001977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.630726 seconds.
+  path: Assets/Resources/Adventurer Aland/PPP
+  artifactKey: Guid(13ec8e46ff565e844895a195b1abc445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/PPP using Guid(13ec8e46ff565e844895a195b1abc445) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0cbce19544dc06341615b3393466a42') in 0.005550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.311207 seconds.
+  path: Assets/Resources/Adventurer Aland/Textures
+  artifactKey: Guid(d4fec6c958a926f45a947d087b3dec7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Textures using Guid(d4fec6c958a926f45a947d087b3dec7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f92b5299129bc2691a7d549bd0371186') in 0.001821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.452476 seconds.
+  path: Assets/Resources/Adventurer Aland/UI
+  artifactKey: Guid(a36fc9ed68aa6db46a63c14b23d1dd40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/UI using Guid(a36fc9ed68aa6db46a63c14b23d1dd40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c39e7a7fa9b6f6edcfb6d306d33e9c6') in 0.001852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.471027 seconds.
+  path: Assets/Resources/Adventurer Aland/UI/Canvas.prefab
+  artifactKey: Guid(feb591db5c8c59441b59e3b93e25c458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/UI/Canvas.prefab using Guid(feb591db5c8c59441b59e3b93e25c458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6143c4fae43b0f1565f638cb364a0ef') in 0.011768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.305651 seconds.
+  path: Assets/Resources/Adventurer Aland/FBX/Sword.FBX
+  artifactKey: Guid(b6779712f46d6f74d984e979f008f240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/FBX/Sword.FBX using Guid(b6779712f46d6f74d984e979f008f240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06eed95244ec3359820493c6a430cf64') in 0.014677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.997146 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid
+  artifactKey: Guid(23c2267c9efe20e4aa1ec350e2cf5efd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid using Guid(23c2267c9efe20e4aa1ec350e2cf5efd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20981dcbc3e7a6036fa685265a901959') in 0.005714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.369037 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Generic
+  artifactKey: Guid(5c574a1a91a706d42b93dd39612f99c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Generic using Guid(5c574a1a91a706d42b93dd39612f99c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd90e44bf68640c347151ffa010ab1c95') in 0.005278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.219221 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Generic/Animations
+  artifactKey: Guid(88b50d18409d7e54598ea9304993cfa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Generic/Animations using Guid(88b50d18409d7e54598ea9304993cfa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f2f4f76a764d72403f58669f96d99cc') in 0.005746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.631999 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX
+  artifactKey: Guid(bed6a021d0825154b9e08041909d7feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX using Guid(bed6a021d0825154b9e08041909d7feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efe94a58a7a465b63ba7025ff51946df') in 0.001950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.426654 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/Animators
+  artifactKey: Guid(d5a4a987620b85e4fba61dda5aa5f613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/Animators using Guid(d5a4a987620b85e4fba61dda5aa5f613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa6ea957c935dff8bb425231e223675c') in 0.005230 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.354558 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/Animators/Rotate.controller
+  artifactKey: Guid(3b03103891c9d6a45a3f5e17d26c45f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/Animators/Rotate.controller using Guid(3b03103891c9d6a45a3f5e17d26c45f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fa2d628998d23ccef568b331d8fe910') in 0.006775 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002890 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.938 seconds
+Domain Reload Profiling:
+	ReloadAssembly (939ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (763ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (261ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (306ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (40ms)
+				ProcessInitializeOnLoadAttributes (251ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2943 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 134.1 MB.
+System memory in use after: 134.4 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 3445.
+Total: 2.477500 ms (FindLiveObjects: 0.164900 ms CreateObjectMapping: 0.070300 ms MarkObjects: 2.208700 ms  DeleteObjects: 0.032700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003077 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.945 seconds
+Domain Reload Profiling:
+	ReloadAssembly (945ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (792ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (293ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (310ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (44ms)
+				ProcessInitializeOnLoadAttributes (251ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.7 MB.
+System memory in use after: 148.9 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4014.
+Total: 2.389600 ms (FindLiveObjects: 0.191400 ms CreateObjectMapping: 0.111300 ms MarkObjects: 2.021600 ms  DeleteObjects: 0.064300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 200.829927 seconds.
+  path: Assets/Behavior Designer/Integrations
+  artifactKey: Guid(519776d3d02747548a264d7d32320ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Behavior Designer/Integrations using Guid(519776d3d02747548a264d7d32320ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92da12d38933832f2be2e43f9442f62') in 0.011955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.489312 seconds.
+  path: Assets/Behavior Designer/Editor
+  artifactKey: Guid(3aa7d582439bc2f4da8254d1364e0f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Behavior Designer/Editor using Guid(3aa7d582439bc2f4da8254d1364e0f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39c3ff8efc1d5c939cb7f8778066432e') in 0.005052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.197992 seconds.
+  path: Assets/Behavior Designer/Runtime
+  artifactKey: Guid(33b3095a3727f544dbe47311776edb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Behavior Designer/Runtime using Guid(33b3095a3727f544dbe47311776edb53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '535b1d93eff8385255620bdb9f385034') in 0.011620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.235844 seconds.
+  path: Assets/Behavior Designer/Documentation.pdf
+  artifactKey: Guid(4646946da2762db46a08e76a6c42f832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Behavior Designer/Documentation.pdf using Guid(4646946da2762db46a08e76a6c42f832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22803bd5d2d5d47cad4124bbc7272738') in 0.014438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1330.662266 seconds.
+  path: Assets/Behavior Designer/Runtime/Tasks/Conditionals/Reflection/CompareFieldValue.cs
+  artifactKey: Guid(cc6496fb6757b684c8cc0c4ac8929319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Behavior Designer/Runtime/Tasks/Conditionals/Reflection/CompareFieldValue.cs using Guid(cc6496fb6757b684c8cc0c4ac8929319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e3f49b4434c2d37457d434dac5b6a76') in 0.009199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 224.646812 seconds.
+  path: Assets/IA/BehaviorTree/PlayerBehavior.asset
+  artifactKey: Guid(37526c0358404714686871caef1172ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IA/BehaviorTree/PlayerBehavior.asset using Guid(37526c0358404714686871caef1172ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b67ea6de82d5a6bc1298d7a5a7f05f6') in 0.012026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 368.743691 seconds.
+  path: Assets/Resources/Adventurer Aland/Prefabs/IronBoy.prefab
+  artifactKey: Guid(c0b5664f819307643a449f2295d639d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Prefabs/IronBoy.prefab using Guid(c0b5664f819307643a449f2295d639d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b24a37590089b97cb593919fd20fce3') in 0.052664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.455465 seconds.
+  path: Assets/IA/Prefabs/IronBoy.prefab
+  artifactKey: Guid(1d03c543d42b34d4ba0b41a498d01ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IA/Prefabs/IronBoy.prefab using Guid(1d03c543d42b34d4ba0b41a498d01ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50e6342c5c083a74803b032375545923') in 0.014265 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.197234 seconds.
+  path: Assets/IA/Prefabs/IronBoy.prefab
+  artifactKey: Guid(1d03c543d42b34d4ba0b41a498d01ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IA/Prefabs/IronBoy.prefab using Guid(1d03c543d42b34d4ba0b41a498d01ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a85b9dabb5b0d8171c0033e95f10d429') in 0.008790 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002978 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.955 seconds
+Domain Reload Profiling:
+	ReloadAssembly (955ms)
+		BeginReloadAssembly (132ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (769ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (254ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (322ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (42ms)
+				ProcessInitializeOnLoadAttributes (267ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3484 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.8 MB.
+System memory in use after: 148.9 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4018.
+Total: 2.638500 ms (FindLiveObjects: 0.260800 ms CreateObjectMapping: 0.129800 ms MarkObjects: 2.180800 ms  DeleteObjects: 0.065900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 910.614601 seconds.
+  path: Assets/IA/Player/IronBoy AnimControl.controller
+  artifactKey: Guid(4242f01739fd9944d96b5d3afa1ff496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IA/Player/IronBoy AnimControl.controller using Guid(4242f01739fd9944d96b5d3afa1ff496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19c2317776df06dd414add7f945b479b') in 0.019863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.724749 seconds.
+  path: Assets/IA/Player/IronBoy AnimController.controller
+  artifactKey: Guid(4242f01739fd9944d96b5d3afa1ff496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IA/Player/IronBoy AnimController.controller using Guid(4242f01739fd9944d96b5d3afa1ff496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95f019ce78df83897c90ae94dc9536f6') in 0.005856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 49.101050 seconds.
+  path: Assets/IA/Player/IronBoy UpperBody.mask
+  artifactKey: Guid(38beeccf6a931e342b6dc64e93efb889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IA/Player/IronBoy UpperBody.mask using Guid(38beeccf6a931e342b6dc64e93efb889) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5223217d478f7cd58cfc32f0a41c7eea') in 0.007166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 160.876691 seconds.
+  path: Assets/IA/Player/IronBoy AnimController.controller
+  artifactKey: Guid(4242f01739fd9944d96b5d3afa1ff496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IA/Player/IronBoy AnimController.controller using Guid(4242f01739fd9944d96b5d3afa1ff496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f11047f4735449d2a3015eb05fc57a1') in 0.002441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 850.989783 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Attack 01.FBX
+  artifactKey: Guid(126285413e4fb304593e0f3941efa2d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Attack 01.FBX using Guid(126285413e4fb304593e0f3941efa2d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd961641be2ba1d363675366ebd852c2') in 0.079942 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003152 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.027 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1027ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (850ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (296ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (355ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (289ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3485 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.8 MB.
+System memory in use after: 149.0 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 4023.
+Total: 2.628400 ms (FindLiveObjects: 0.249600 ms CreateObjectMapping: 0.121200 ms MarkObjects: 2.185700 ms  DeleteObjects: 0.070500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 623.422322 seconds.
+  path: Assets/WowAnim.cs
+  artifactKey: Guid(79d1763f8b985064b8abb3049d3102f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/WowAnim.cs using Guid(79d1763f8b985064b8abb3049d3102f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5aee42e871b8750a7eaf467eb9387d0') in 0.009205 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003275 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.970 seconds
+Domain Reload Profiling:
+	ReloadAssembly (970ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (814ms)
+			LoadAssemblies (72ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (283ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (334ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (44ms)
+				ProcessInitializeOnLoadAttributes (275ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3484 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 148.8 MB.
+System memory in use after: 149.0 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 4025.
+Total: 2.837500 ms (FindLiveObjects: 0.225800 ms CreateObjectMapping: 0.108800 ms MarkObjects: 2.443200 ms  DeleteObjects: 0.058300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 362.684074 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Attack 03.FBX
+  artifactKey: Guid(d57b7078a4c5ac2409ace0e2ab80aef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Attack 03.FBX using Guid(d57b7078a4c5ac2409ace0e2ab80aef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c3a936009b659f872a93a01062f27ac') in 0.082719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.764192 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Attack 04.FBX
+  artifactKey: Guid(309ccd636a70a48458e174878e29bbd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Attack 04.FBX using Guid(309ccd636a70a48458e174878e29bbd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d08f74256a23ad6f34ca3aad24d6f1c') in 0.028299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.814498 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Defend.FBX
+  artifactKey: Guid(1a7eb3a97b0689b4db1e41a0d4b8da27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Defend.FBX using Guid(1a7eb3a97b0689b4db1e41a0d4b8da27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ac6483fd7d5837d9e15a602016f600b') in 0.024884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.316604 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Idle.FBX
+  artifactKey: Guid(c660cf4727679eb4da785badbed5d0cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Idle.FBX using Guid(c660cf4727679eb4da785badbed5d0cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bde8ed781f79edec5150eb0dd69be61') in 0.021965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.380657 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Die.FBX
+  artifactKey: Guid(a52d7fea8199ccc46b1d2198e5f69157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Die.FBX using Guid(a52d7fea8199ccc46b1d2198e5f69157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eaa7328dace2f6c58f7cb51bd969ec4') in 0.021175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.293538 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Jump W Root.FBX
+  artifactKey: Guid(ba8596da1f0493e4cb8dabc2357e2ad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Jump W Root.FBX using Guid(ba8596da1f0493e4cb8dabc2357e2ad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c2628252bb40b360a26db7ad4ad3d51') in 0.022578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.371543 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Jump WO Root.FBX
+  artifactKey: Guid(e2e9ce104bc295e4f876792e327deef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Jump WO Root.FBX using Guid(e2e9ce104bc295e4f876792e327deef9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bfd2486f1b4770aa67dc73c8bd4024e') in 0.025975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.226187 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Run Backward W Root.FBX
+  artifactKey: Guid(b09673caf35a8ba47bbdfef578145b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Run Backward W Root.FBX using Guid(b09673caf35a8ba47bbdfef578145b84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '604fa7b3e925bf24e5db1efb8e5520d8') in 0.027569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.497825 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Run Backward WO Root.FBX
+  artifactKey: Guid(05c8c94ae1a13fd42a5e7573fcc557bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Run Backward WO Root.FBX using Guid(05c8c94ae1a13fd42a5e7573fcc557bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a0ee6837966560c88e5284032978fee') in 0.028316 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.148405 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Run Forward W Root.FBX
+  artifactKey: Guid(6e2680ce21a09a042a4047ccdd72a234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Run Forward W Root.FBX using Guid(6e2680ce21a09a042a4047ccdd72a234) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6a1b10775f276d8bad0a72b50727fbc') in 0.028164 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.362788 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Run Forward WO Root.FBX
+  artifactKey: Guid(d55666710d137304f9c371c37a0f5c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Run Forward WO Root.FBX using Guid(d55666710d137304f9c371c37a0f5c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8c1bea2af50208e8ca2cce827375e54') in 0.027669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.371630 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Spell Cast.FBX
+  artifactKey: Guid(ebadde39eab367e4ca55e74841c28b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Spell Cast.FBX using Guid(ebadde39eab367e4ca55e74841c28b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '779bd651680204a74ae513c063ed19c4') in 0.024291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.449308 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Strafe Left W Root.FBX
+  artifactKey: Guid(2d439e716510c72469ad7eb3c2975584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Strafe Left W Root.FBX using Guid(2d439e716510c72469ad7eb3c2975584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3073c9e716adae1bd1dad84eb86723c9') in 0.028182 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.663305 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Strafe Left WO Root.FBX
+  artifactKey: Guid(950565e8bef8bd14e9fef432908ae8ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Strafe Left WO Root.FBX using Guid(950565e8bef8bd14e9fef432908ae8ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06ac662add10552566727793664cd8a0') in 0.031896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.369941 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Strafe Right W Root.FBX
+  artifactKey: Guid(e421c45cf58928b4f94291e396d5be21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Strafe Right W Root.FBX using Guid(e421c45cf58928b4f94291e396d5be21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '658fa3248a9332eec1cb9e8cf5d6839e') in 0.028333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.559782 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Strafe Right WO Root.FBX
+  artifactKey: Guid(b568d3df2f6f29e419ba559e5b80b4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Strafe Right WO Root.FBX using Guid(b568d3df2f6f29e419ba559e5b80b4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3fcd0702d100aae0faec5759aa8eeef') in 0.041370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.703154 seconds.
+  path: Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Take Damage.FBX
+  artifactKey: Guid(2e363d2351e8bc241aa11c14e880439b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Adventurer Aland/Legacy (No longer supported)/Outdated Humanoid/FBX/Adventurer Aland@Take Damage.FBX using Guid(2e363d2351e8bc241aa11c14e880439b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '477e9094e58f1d045f838440184a74be') in 0.022531 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 386.666947 seconds.
+  path: Assets/Gizmos
+  artifactKey: Guid(83e68ef8a9fae1d478e2af0204db5f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gizmos using Guid(83e68ef8a9fae1d478e2af0204db5f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a02fb530e4b9c97b715e375e9e0a21de') in 0.007412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.883399 seconds.
+  path: Assets/IA/Prefabs/IronBoy.prefab
+  artifactKey: Guid(1d03c543d42b34d4ba0b41a498d01ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IA/Prefabs/IronBoy.prefab using Guid(1d03c543d42b34d4ba0b41a498d01ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '581efc2e939f427555c70844c9e374ca') in 0.017807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 156.027217 seconds.
+  path: Assets/IA/Prefabs/IronBoy.prefab
+  artifactKey: Guid(1d03c543d42b34d4ba0b41a498d01ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IA/Prefabs/IronBoy.prefab using Guid(1d03c543d42b34d4ba0b41a498d01ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be28bd6ea66791bc6c53fba7020ba24') in 0.009735 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003199 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.952 seconds
+Domain Reload Profiling:
+	ReloadAssembly (953ms)
+		BeginReloadAssembly (131ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (771ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (253ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (326ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (264ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3484 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.1 MB.
+System memory in use after: 149.3 MB.
+
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 4029.
+Total: 2.988300 ms (FindLiveObjects: 0.285900 ms CreateObjectMapping: 0.115600 ms MarkObjects: 2.514300 ms  DeleteObjects: 0.070900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002802 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.926 seconds
+Domain Reload Profiling:
+	ReloadAssembly (926ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (761ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (273ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (300ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (41ms)
+				ProcessInitializeOnLoadAttributes (243ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3484 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.1 MB.
+System memory in use after: 149.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4032.
+Total: 2.965500 ms (FindLiveObjects: 0.198900 ms CreateObjectMapping: 0.100800 ms MarkObjects: 2.604400 ms  DeleteObjects: 0.060200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003891 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\IronboyAdventure\Ironboy_Adventure\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.901 seconds
+Domain Reload Profiling:
+	ReloadAssembly (901ms)
+		BeginReloadAssembly (106ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (741ms)
+			LoadAssemblies (77ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (244ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (318ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (258ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3484 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.1 MB.
+System memory in use after: 149.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4035.
+Total: 2.808900 ms (FindLiveObjects: 0.197900 ms CreateObjectMapping: 0.093800 ms MarkObjects: 2.442200 ms  DeleteObjects: 0.074100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
