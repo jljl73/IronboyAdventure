@@ -9,9 +9,15 @@ public class Snake : MonoBehaviour
     GameObject[] fires;
     [SerializeField]
     Transform GunPoint;
+    [SerializeField]
+    int[] nAttack;
+    [SerializeField]
+    float[] Speed;
 
+    int state = 0;
     Animator animator;
     public GameObject player;
+    bool Reflectable = false;
 
     void Start()
     {
@@ -19,7 +25,7 @@ public class Snake : MonoBehaviour
         StartCoroutine(AttackFirst());
     }
 
-    void AttackProjectile()
+    void BeginAttackAnimation()
     {
         animator.SetTrigger("Projectile Attack Front");
     }
@@ -29,15 +35,20 @@ public class Snake : MonoBehaviour
         GameObject projectile = Instantiate(fires[Random.Range(0, fires.Length)],
             GunPoint.position, transform.rotation);
         projectile.GetComponent<Mover>().SetTarget(player);
+        projectile.GetComponent<Mover>().MulSpeed(Speed[state]);
+        projectile.GetComponent<Fire>().Reflectable = Reflectable;
     }
+
 
     IEnumerator AttackFirst()
     {
         int count = 0;
-        while(count++ < 5)
+        while (state == 0)
         {
-            AttackProjectile();
-            yield return new WaitForSeconds(3.0f);
+            count++;
+            Reflectable = (count == nAttack[0]) ? true : false;
+            BeginAttackAnimation();
+            yield return new WaitForSeconds(4.0f);
         }
         StartCoroutine(AttackSecond());
     }
@@ -45,10 +56,12 @@ public class Snake : MonoBehaviour
     IEnumerator AttackSecond()
     {
         int count = 0;
-        while (count++ < 5)
+        while (state == 1)
         {
-            AttackProjectile();
-            yield return new WaitForSeconds(3.0f);
+            count++;
+            Reflectable = (count == nAttack[1]) ? true : false;
+            BeginAttackAnimation();
+            yield return new WaitForSeconds(4.0f);
         }
         StartCoroutine(AttackThird());
     }
@@ -56,11 +69,27 @@ public class Snake : MonoBehaviour
     IEnumerator AttackThird()
     {
         int count = 0;
-        while (count++ < 7)
+        while (state == 2)
         {
-            AttackProjectile();
-            yield return new WaitForSeconds(3.0f);
+            count++;
+            Reflectable = (count == nAttack[2]) ? true : false;
+            BeginAttackAnimation();
+            yield return new WaitForSeconds(4.0f);
         }
-        StartCoroutine(AttackFirst());
+    }
+
+    void Die()
+    {
+        animator.SetTrigger("Die");
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            ++state;
+            if(state < 3) animator.SetTrigger("Take Damage");
+            else Die();
+        }
     }
 }

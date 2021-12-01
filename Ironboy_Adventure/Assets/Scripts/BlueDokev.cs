@@ -8,5 +8,7 @@ public class BlueDokev : Dokev
     {
         if (other.CompareTag("PlayerAttack"))
             Hit();
+        else if (other.CompareTag("Player"))
+            Attack();
     }
 }
