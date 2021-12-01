@@ -6,16 +6,53 @@ public class IA_Player : MonoBehaviour
 {
     const float immortalTime = 2.0f;
     const float hurtMotionTime = 1.0f;
+    const float moveGap = 1.0f;
 
     [SerializeField]
-    int hearts = 3;
-    public int Hearts { get => hearts; }
+    Collider collider_PlayerBody;
+    public Collider Collider_PlayerBody
+    { get => collider_PlayerBody; }
+
+    [SerializeField]
+    Collider collider_VerticalAttack;
+    public Collider Collider_VerticalAttack
+    { get => collider_VerticalAttack; }
+
+    [SerializeField]
+    Collider collider_HorizontalAttack;
+    public Collider Collider_HorizontalAttack
+    { get => collider_HorizontalAttack; }
+
+    [SerializeField]
+    Collider collider_Guard;
+    public Collider Collider_Guard
+    { get => collider_Guard; }
+
+    [SerializeField]
+    Collider collider_SpecialGuard;
+    public Collider Collider_SpecialGuard
+    { get => collider_SpecialGuard; }
+
+
+    [SerializeField]
+    public int Hearts
+    {
+        get => GameManager.Instance.HeartCount;
+        set => GameManager.Instance.HeartCount = value;
+    }
 
     float hurtTime = 0.0f;
     public float HurtTime {get => hurtTime;}
 
+    float jumpTime = 0.0f;
+    public float JumpTime {get => jumpTime;}
+
     bool dead = false;
     public bool Dead { get => dead; }
+
+    Vector3 startPos;
+    int currentRail = 0;
+
 
     Animator animator;
     #region Anim_Params
@@ -36,58 +73,92 @@ public class IA_Player : MonoBehaviour
         set { animator.SetBool("Special Guard", value); }
     }
     bool Anim_Jump {
-        //get { return animator.GetBool("Jump"); }
-        set { animator.SetTrigger("Jump"); }
+        get { return animator.GetBool("Jump"); }
+        set { animator.SetBool("Jump", value); }
     }
     bool Anim_HorizontalAttack {
-        //get { return animator.GetBool("Horizontal Attack"); }
-        set { animator.SetTrigger("Horizontal Attack"); }
+        get { return animator.GetBool("Horizontal Attack"); }
+        set { animator.SetBool("Horizontal Attack", value); }
     }
     bool Anim_VerticalAttack {
-        //get { return animator.GetBool("Vertical Attack"); }
-        set { animator.SetTrigger("Vertical Attack"); }
+        get { return animator.GetBool("Vertical Attack"); }
+        set { animator.SetBool("Vertical Attack", value); }
     }
     bool Anim_Guard {
         get { return animator.GetBool("Guard"); }
         set { animator.SetBool("Guard", value); }
     }
+    //bool Anim_RunRight {
+    //    //get { return animator.GetBool("Run Right"); }
+    //    set { animator.SetTrigger("Run Right"); }
+    //}
+    //bool Anim_RunLeft {
+    //    //get { return animator.GetBool("Run Left"); }
+    //    set { animator.SetTrigger("Run Left"); }
+    //}
     #endregion
 
 
-    public void Damaged(int i)
+    public bool Damaged(int i)
     {
         if (i < 1 || hurtTime > 0.0f)
-            return;
+            return false;
 
         hurtTime = immortalTime;
-        hearts -= i;
+        Hearts -= i;
 
-        if (hearts <= 0)
+        if (Hearts <= 0)
         {
-            hearts = 0;
+            Hearts = 0;
             dead = true;
             Anim_Dead = true;
         }
+
+        return true;
     }
 
-    public void Heal(int i)
+    public bool TryJump()
     {
-        hearts += i;
-        if (i > 5)
-            hearts = 5;
+        if (jumpTime > 0.0f)
+            return false;
+
+        jumpTime = 1.0f;
+        return true;
     }
 
     public void Revive()
     {
         dead = true;
-        hearts = 3;
+        Hearts = 3;
     }
 
+    public bool MoveRight()
+    {
+        if (currentRail >= 1)
+            return false;
+
+        currentRail++;
+        transform.Translate(new Vector3(moveGap, 0, 0));
+        return true;
+    }
+    public bool MoveLeft()
+    {
+        if (currentRail <= -1)
+            return false;
+
+        currentRail--;
+        transform.Translate(new Vector3(-moveGap, 0, 0));
+        return true;
+    }
 
 
     private void Awake()
     {
-        animator = GetComponent<Animator>();   
+        animator = GetComponentInChildren<Animator>();
+        animator.GetBehaviour<IA_PlayerSB_Base>().player = this;
+        animator.GetBehaviour<IA_PlayerSB_UpperBody>().player = this;
+
+        startPos = transform.position;
     }
 
     private void Update()
@@ -104,9 +175,14 @@ public class IA_Player : MonoBehaviour
         else
             hurtTime = 0.0f;
 
+        if (jumpTime > 0.0f)
+            jumpTime -= Time.deltaTime;
+        else
+            hurtTime = 0.0f;
 
 
-        if (Input.GetKeyDown(KeyCode.Space))
+
+        if (Input.GetKeyDown(KeyCode.Space) && TryJump())
             Anim_Jump = true;
 
         if (Input.GetKeyDown(KeyCode.Q))
@@ -126,12 +202,34 @@ public class IA_Player : MonoBehaviour
             Anim_SpecialGuard = false;
 
         if (Input.GetKeyDown(KeyCode.Z))
-            Anim_Hurt = !Anim_Hurt;
+            hurtTime = 2.0f;
         if (Input.GetKeyDown(KeyCode.X))
             Anim_Dead = !Anim_Dead;
         if (Input.GetKeyDown(KeyCode.UpArrow))
             Anim_Running = !Anim_Running;
 
-        
+        if(Input.GetKeyDown(KeyCode.RightArrow) && currentRail < 1 && Anim_Running)
+        {
+            //Anim_RunRight = true;
+            MoveRight();
+        }
+        else if(Input.GetKeyDown(KeyCode.LeftArrow) && currentRail > -1 && Anim_Running)
+        {
+            //Anim_RunLeft = true;
+            MoveLeft();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Enemy"))
+        {
+            Damaged(1);
+        }
+        else if(other.CompareTag("FireOfDeath"))
+        {
+            Damaged(2);
+        }
+
     }
 }
