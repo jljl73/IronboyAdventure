@@ -22,8 +22,9 @@ public class UITest : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.A))
+
         {
-            GameManager.Instance.Advancement = GameManager.Instance.Advancement + 10;
+            GameManager.Instance.Advancement = GameManager.Instance.Advancement + 1;
         }
     }
 }

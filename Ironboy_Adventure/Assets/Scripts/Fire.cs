@@ -30,7 +30,9 @@ public class Fire : MonoBehaviour
             else
                 ChangeDirectionReverse();
         }
-        else if(other.CompareTag("Boss"))
+        else if (other.CompareTag("Boss"))
+            Destroy(gameObject);
+        else if (other.CompareTag("FireOfDeath"))
             Destroy(gameObject);
     }
 }

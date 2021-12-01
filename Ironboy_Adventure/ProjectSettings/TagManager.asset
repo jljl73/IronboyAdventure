@@ -8,6 +8,7 @@ TagManager:
   - FxTemporaire
   - Enemy
   - Boss
+  - FireOfDeath
   layers:
   - Default
   - TransparentFX
