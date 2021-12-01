@@ -41,7 +41,7 @@ public class Spawner : MonoBehaviour
     Vector3 RandomLane(int nLane)
     {
         int half = nLane >> 1;
-        int randomIndex = Random.Range(-half, half);
+        int randomIndex = Random.Range(-half, half+1);
 
         Vector3 position = transform.position + new Vector3(randomIndex * Space, 0.0f, 0.0f);
         return position;
