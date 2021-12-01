@@ -21,9 +21,9 @@ public class Dokev : MonoBehaviour
 
     protected void Attack()
     {
-        GetComponent<Mover>().Move(false);
+        //GetComponent<Mover>().Move(false);
         animator.SetTrigger("Attack 02");
-        Destroy(gameObject, 1.0f);
+        Destroy(gameObject, 3.0f);
     }
 
 }
