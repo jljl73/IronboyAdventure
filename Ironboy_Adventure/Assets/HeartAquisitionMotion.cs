@@ -22,7 +22,7 @@ public class HeartAquisitionMotion : MonoBehaviour
 
     float zRotation;
     [SerializeField]
-    float zRotationRate = 1;
+    float zRotationRate = 720;
     [SerializeField]
     float initialMoveSpeed = 1;
     [SerializeField]
@@ -32,15 +32,15 @@ public class HeartAquisitionMotion : MonoBehaviour
 
     float movedTime = 0;
 
-    void Awake()
+    void OnEnable()
     {
-        image = GetComponent<Image>();
-        rectTransform = GetComponent<RectTransform>();
-    }
-
-    void Start()
-    {
-        initialPosition = rectTransform.position;
+        if (image == null)
+            image = GetComponent<Image>();
+        if (rectTransform == null)
+        {
+            rectTransform = GetComponent<RectTransform>();
+            initialPosition = rectTransform.position;
+        }
     }
 
     // Update is called once per frame
@@ -98,10 +98,11 @@ public class HeartAquisitionMotion : MonoBehaviour
 
     public void Activate()
     {
+        this.gameObject.SetActive(true);
+
         // 플레이어 위치 to screen point
         rectTransform.position = initialPosition;
 
-        this.gameObject.SetActive(true);
         image.color = Color.white;
         motionState = enumMotion.Spin;
         movedTime = 0f;

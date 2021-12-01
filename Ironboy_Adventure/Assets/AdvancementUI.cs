@@ -18,6 +18,6 @@ public class AdvancementUI : MonoBehaviour
     public void OnAdvancementUpdate()
     {
         slider.value = GameManager.Instance.Advancement;
-        advancementText.text = slider.value.ToString() + " / " + slider.maxValue.ToString();
+        //advancementText.text = slider.value.ToString() + " / " + slider.maxValue.ToString();
     }
 }
