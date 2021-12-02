@@ -19,6 +19,9 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     AdvancementUI advancementUI;
 
+    [SerializeField]
+    ComboUI comboUI;
+
     private void Awake()
     {
         GameManager.Instance.uiManager = this;
@@ -46,5 +49,10 @@ public class UIManager : MonoBehaviour
     public void OnAdvancementUpdate()
     {
         advancementUI.OnAdvancementUpdate();
+    }
+
+    public void OnComboUpdate()
+    {
+        comboUI.OnComboUIUpdate();
     }
 }

@@ -26,8 +26,9 @@ public class GameManager : MonoBehaviour
     UnityEvent OnHeartUpdate = new UnityEvent();
     UnityEvent OnScoreUpdate = new UnityEvent();
     UnityEvent OnAdvancementUpdate = new UnityEvent();
+    UnityEvent OnComboUpdate = new UnityEvent();
 
-
+    public bool GameOver { get; set; }
 
     // UI 정보
     int heartCount;
@@ -63,11 +64,12 @@ public class GameManager : MonoBehaviour
         set
         {
             combo = value;
-            if (combo % 15 == 0)
+            if (combo > 0 && combo % 15 == 0)
             {
                 // 함수 내부에서 하트 증가
                 uiManager.OnTriggerHeartAquisition();
             }
+            OnComboUpdate.Invoke();
         }
     }
     float advancement;
@@ -98,7 +100,14 @@ public class GameManager : MonoBehaviour
         OnHeartUpdate.AddListener(uiManager.OnLifeUIUpdate);
         OnScoreUpdate.AddListener(uiManager.OnScoreUIUpdate);
         OnAdvancementUpdate.AddListener(uiManager.OnAdvancementUpdate);
+        OnComboUpdate.AddListener(uiManager.OnComboUpdate);
     }
+
+    public void AddAdvancementUpdate(UnityAction action)
+    {
+        OnAdvancementUpdate.AddListener(action);
+    }
+
     void InitializeSetting()
     {
         HeartCount = 3;

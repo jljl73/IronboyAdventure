@@ -16,8 +16,5 @@ public class IA_PlayerSkillTrigger : MonoBehaviour
     SkillType triggerType;
     public SkillType TriggerType {get => triggerType;}
 
-    private void OnTriggerEnter(Collider other)
-    {
-        //
-    }
+
 }

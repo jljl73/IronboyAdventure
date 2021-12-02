@@ -11,14 +11,17 @@ public class Dokev : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         animator.SetBool("Run Forward", true);
+        Destroy(gameObject, 20.0f);
     }
 
     protected void Hit()
     {
         GetComponent<Mover>().Move(false);
+        GetComponent<AudioSource>().Play();
         animator.SetTrigger("Die");
         GetComponent<Collider>().enabled = false;
         GameManager.Instance.Score += 100;
+        GameManager.Instance.Combo += 1;
         Destroy(gameObject, 2.0f);
     }
 
@@ -26,7 +29,7 @@ public class Dokev : MonoBehaviour
     {
         //GetComponent<Mover>().Move(false);
         animator.SetTrigger("Attack 02");
-        Destroy(gameObject, 3.0f);
+        Destroy(gameObject, 4.0f);
     }
 
 }

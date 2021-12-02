@@ -6,26 +6,34 @@ public class FireOfDeath : MonoBehaviour
 {
     [SerializeField]
     int[] advancements;
+    [SerializeField]
+    GameObject Fire;
+
 
     int index = 0;
     public float duration = 3.0f;
     void Start()
     {
-        GameManager.Instance.AddAdvancementUpdate(BeginFire);
-        EndFire();
+        GameManager.Instance.AddAdvancementUpdate(PrepareFire);
     }
 
-    void BeginFire()
+    void PrepareFire()
     {
         if (GameManager.Instance.Advancement < advancements[index]) return;
 
         ++index;
-        gameObject.SetActive(true);
+        GetComponent<AudioSource>().Play();
+        Invoke("BeginFire", 3.0f);
+    }
+
+    void BeginFire()
+    {
+        Fire.SetActive(true);
         Invoke("EndFire", duration);
     }
 
     void EndFire()
     {
-        gameObject.SetActive(false);
+        Fire.SetActive(false);
     }
 }

@@ -21,10 +21,14 @@ public class Spawner : MonoBehaviour
 
     IEnumerator Spawn()
     {
-        while(!isFinished)
+        while(!GameManager.Instance.GameOver)
         {
-            GameObject newEnemy = Instantiate(GetRandomEnemy(), RandomLane(nLane), transform.rotation, transform);
+            GameObject newEnemy = Instantiate(GetRandomEnemy(), transform);
+
+            int width = newEnemy.GetComponent<Mover>().Width;
+            newEnemy.transform.position = RandomLane(nLane, width);
             newEnemy.GetComponent<Mover>().Move(true);
+            
             yield return wait;
         }
     }
@@ -38,10 +42,10 @@ public class Spawner : MonoBehaviour
     }
 
     // ÀÏ´Ü È¦¼ö¸¸
-    Vector3 RandomLane(int nLane)
+    Vector3 RandomLane(int nLane, int width)
     {
         int half = nLane >> 1;
-        int randomIndex = Random.Range(-half, half+1);
+        int randomIndex = Random.Range(-half, half + 2 - width);
 
         Vector3 position = transform.position + new Vector3(randomIndex * Space, 0.0f, 0.0f);
         return position;

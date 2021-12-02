@@ -9,6 +9,8 @@ TagManager:
   - Enemy
   - Boss
   - FireOfDeath
+  - AttackTrigger
+  - Fireball
   layers:
   - Default
   - TransparentFX

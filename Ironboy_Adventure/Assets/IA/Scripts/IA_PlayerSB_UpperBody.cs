@@ -17,10 +17,12 @@ public class IA_PlayerSB_UpperBody : StateMachineBehaviour
         if(stateInfo.shortNameHash == Hash_Horizontal)
         {
             player.Collider_HorizontalAttack.gameObject.SetActive(true);
+            player.PlaySound("Horizontal");
         }
         else if(stateInfo.shortNameHash == Hash_Vertical)
         {
             player.Collider_VerticalAttack.gameObject.SetActive(true);
+            player.PlaySound("Vertical");
         }
         else if(stateInfo.shortNameHash == Hash_Guard)
         {
