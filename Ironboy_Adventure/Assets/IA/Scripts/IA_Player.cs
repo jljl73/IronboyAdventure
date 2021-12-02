@@ -6,7 +6,8 @@ public class IA_Player : MonoBehaviour
 {
     const float immortalTime = 2.0f;
     const float hurtMotionTime = 1.0f;
-    const float moveGap = 1.0f;
+    [SerializeField]
+    float moveGap = 1.0f;
 
     [SerializeField]
     Collider collider_PlayerBody;
@@ -106,7 +107,6 @@ public class IA_Player : MonoBehaviour
 
         hurtTime = immortalTime;
         Hearts -= i;
-
         if (Hearts <= 0)
         {
             Hearts = 0;
@@ -178,8 +178,9 @@ public class IA_Player : MonoBehaviour
         if (jumpTime > 0.0f)
             jumpTime -= Time.deltaTime;
         else
-            hurtTime = 0.0f;
+            jumpTime = 0.0f;
 
+        GameManager.Instance.Advancement += Time.deltaTime;
 
 
         if (Input.GetKeyDown(KeyCode.Space) && TryJump())
