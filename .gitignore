@@ -1,10 +1,10 @@
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-Assets/AssetStoreTools*
+Ironboy_Adventure/[Ll]ibrary/
+Ironboy_Adventure/[Tt]emp/
+Ironboy_Adventure/[Oo]bj/
+Ironboy_Adventure/[Bb]uild/
+Ironboy_Adventure/[Bb]uilds/
+Ironboy_Adventure/[Ll]ogs/
+Ironboy_Adventure/Assets/AssetStoreTools*
 
 # Visual Studio cache directory
 .vs/
