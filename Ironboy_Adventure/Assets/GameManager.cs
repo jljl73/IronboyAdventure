@@ -21,11 +21,13 @@ public class GameManager : MonoBehaviour
 
     // 매니저 관리
     public UIManager uiManager;
-    
+
     // 이벤트
     UnityEvent OnHeartUpdate = new UnityEvent();
     UnityEvent OnScoreUpdate = new UnityEvent();
     UnityEvent OnAdvancementUpdate = new UnityEvent();
+
+
 
     // UI 정보
     int heartCount;
@@ -68,8 +70,8 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-    int advancement;
-    public int Advancement
+    float advancement;
+    public float Advancement
     {
         get { return advancement; }
         set
@@ -97,22 +99,6 @@ public class GameManager : MonoBehaviour
         OnScoreUpdate.AddListener(uiManager.OnScoreUIUpdate);
         OnAdvancementUpdate.AddListener(uiManager.OnAdvancementUpdate);
     }
-
-    public void AddHeartUpdate(UnityAction action)
-    {
-        OnHeartUpdate.AddListener(action);
-    }
-
-    public void AddScoreUpdate(UnityAction action)
-    {
-        OnScoreUpdate.AddListener(action);
-    }
-
-    public void AddAdvancementUpdate(UnityAction action)
-    {
-        OnAdvancementUpdate.AddListener(action);
-    }
-
     void InitializeSetting()
     {
         HeartCount = 3;
