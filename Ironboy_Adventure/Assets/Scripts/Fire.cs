@@ -6,7 +6,7 @@ public class Fire : MonoBehaviour
 {
     public float duration = 4.0f;
     [SerializeField]
-    int type = 0;
+    IA_PlayerSkillTrigger.SkillType type;
 
     public bool Reflectable;
 
@@ -25,14 +25,20 @@ public class Fire : MonoBehaviour
     {
         if (other.CompareTag("PlayerAttack"))
         {
-            if (!Reflectable)
-                Destroy(gameObject);
-            else
-                ChangeDirectionReverse();
+            if (other.GetComponent<IA_PlayerSkillTrigger>().TriggerType == type)
+                Hit();
         }
         else if (other.CompareTag("Boss"))
             Destroy(gameObject);
         else if (other.CompareTag("FireOfDeath"))
             Destroy(gameObject);
+    }
+
+    void Hit()
+    {
+        if (!Reflectable)
+            Destroy(gameObject);
+        else
+            ChangeDirectionReverse();
     }
 }

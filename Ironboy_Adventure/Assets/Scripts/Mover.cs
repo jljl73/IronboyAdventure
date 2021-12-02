@@ -7,6 +7,8 @@ public class Mover : MonoBehaviour
     public float speed = 2.0f;
     public Vector3 Direction = Vector3.forward;
 
+    public int width = 1;
+    public int Width { get => width; }
     bool isMoving;
     
     void Start()
@@ -16,7 +18,7 @@ public class Mover : MonoBehaviour
     
     void FixedUpdate()
     {
-        if (isMoving)
+        if (isMoving && !GameManager.Instance.GameOver)
             transform.position += (Direction * speed * Time.deltaTime);
     }
 

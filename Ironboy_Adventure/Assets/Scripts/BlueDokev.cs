@@ -14,7 +14,7 @@ public class BlueDokev : Dokev
             if (other.GetComponent<IA_PlayerSkillTrigger>().TriggerType == type)
                 Hit();
         }
-        else if (other.CompareTag("Player"))
+        else if (other.CompareTag("AttackTrigger"))
             Attack();
         else if (other.CompareTag("FireOfDeath"))
             Hit();

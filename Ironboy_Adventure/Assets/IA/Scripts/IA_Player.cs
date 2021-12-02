@@ -34,6 +34,11 @@ public class IA_Player : MonoBehaviour
     public Collider Collider_SpecialGuard
     { get => collider_SpecialGuard; }
 
+    [SerializeField]
+    AudioClip VerticalAttack;
+    [SerializeField]
+    AudioClip HorizontalAttack;
+
 
     [SerializeField]
     public int Hearts
@@ -50,6 +55,12 @@ public class IA_Player : MonoBehaviour
 
     bool dead = false;
     public bool Dead { get => dead; }
+
+    bool GameOver
+    {
+        get => GameManager.Instance.GameOver;
+        set => GameManager.Instance.GameOver = value;
+    }
 
     Vector3 startPos;
     int currentRail = 0;
@@ -99,6 +110,21 @@ public class IA_Player : MonoBehaviour
     //}
     #endregion
 
+    public void PlaySound(string value)
+    {
+        switch (value)
+        {
+            case "Vertical":
+                GetComponent<AudioSource>().clip = VerticalAttack;
+                break;
+            case "Horizontal":
+                GetComponent<AudioSource>().clip = HorizontalAttack;
+                break;
+        }
+
+        GetComponent<AudioSource>().Play();
+    }
+
 
     public bool Damaged(int i)
     {
@@ -107,11 +133,14 @@ public class IA_Player : MonoBehaviour
 
         hurtTime = immortalTime;
         Hearts -= i;
+        GameManager.Instance.Combo = 0;
+
         if (Hearts <= 0)
         {
             Hearts = 0;
             dead = true;
             Anim_Dead = true;
+            GameOver = true;
         }
 
         return true;
@@ -130,6 +159,7 @@ public class IA_Player : MonoBehaviour
     {
         dead = true;
         Hearts = 3;
+        GameOver = false;
     }
 
     public bool MoveRight()
@@ -159,6 +189,7 @@ public class IA_Player : MonoBehaviour
         animator.GetBehaviour<IA_PlayerSB_UpperBody>().player = this;
 
         startPos = transform.position;
+        Anim_Running = true;
     }
 
     private void Update()
@@ -180,7 +211,8 @@ public class IA_Player : MonoBehaviour
         else
             jumpTime = 0.0f;
 
-        GameManager.Instance.Advancement += Time.deltaTime;
+        if(!GameOver)
+            GameManager.Instance.Advancement += Time.deltaTime;
 
 
         if (Input.GetKeyDown(KeyCode.Space) && TryJump())
@@ -198,14 +230,23 @@ public class IA_Player : MonoBehaviour
             Anim_Guard = false;
 
         if (Input.GetKeyDown(KeyCode.R))
+        {
             Anim_SpecialGuard = true;
+            GetComponent<Collider>().enabled = false;
+        }
         else if (Input.GetKeyUp(KeyCode.R))
+        {
             Anim_SpecialGuard = false;
+            GetComponent<Collider>().enabled = true;
+        }
+
 
         if (Input.GetKeyDown(KeyCode.Z))
             hurtTime = 2.0f;
+
         if (Input.GetKeyDown(KeyCode.X))
             Anim_Dead = !Anim_Dead;
+
         if (Input.GetKeyDown(KeyCode.UpArrow))
             Anim_Running = !Anim_Running;
 
@@ -227,10 +268,12 @@ public class IA_Player : MonoBehaviour
         {
             Damaged(1);
         }
-        else if(other.CompareTag("FireOfDeath"))
+        else if (other.CompareTag("FireOfDeath"))
         {
             Damaged(2);
         }
-
+        else if(other.CompareTag("Fireball") && JumpTime == 0.0f)
+            Damaged(1);
     }
+
 }
