@@ -25,6 +25,7 @@ public class LifeUI : MonoBehaviour
     public void OnLifeUIUpdate()
     {
         int heartCount = GameManager.Instance.HeartCount;
+        InitializeSetting();
         for (int i = 0; i < heartCount; i++)
         {
             lifes[i].SetActive(true);

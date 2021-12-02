@@ -5,6 +5,7 @@ using UnityEngine;
 public class Dokev : MonoBehaviour
 {
     protected Animator animator;
+    
 
     protected void Start()
     {
@@ -16,6 +17,8 @@ public class Dokev : MonoBehaviour
     {
         GetComponent<Mover>().Move(false);
         animator.SetTrigger("Die");
+        GetComponent<Collider>().enabled = false;
+        GameManager.Instance.Score += 100;
         Destroy(gameObject, 2.0f);
     }
 

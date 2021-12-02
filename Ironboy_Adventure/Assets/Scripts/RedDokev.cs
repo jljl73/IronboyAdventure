@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class RedDokev : Dokev
 {
-    
+    [SerializeField]
+    IA_PlayerSkillTrigger.SkillType type = IA_PlayerSkillTrigger.SkillType.HorizontalAttack;
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("PlayerAttack"))
-            Hit();
-
+        {
+            if(other.GetComponent<IA_PlayerSkillTrigger>().TriggerType == type)
+                Hit();
+        }
         else if (other.CompareTag("Player"))
             Attack();
     }
