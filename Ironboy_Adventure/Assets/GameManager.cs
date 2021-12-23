@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -27,8 +28,18 @@ public class GameManager : MonoBehaviour
     UnityEvent OnScoreUpdate = new UnityEvent();
     UnityEvent OnAdvancementUpdate = new UnityEvent();
     UnityEvent OnComboUpdate = new UnityEvent();
+    UnityEvent OnGameOver = new UnityEvent();
 
-    public bool GameOver { get; set; }
+    public bool gameOver;
+    public bool GameOver {
+        get => gameOver;
+        set
+        {
+            gameOver = value;
+            OnGameOver.Invoke();
+        }
+    }
+    public bool BossMode { get; set; }
 
     // UI Á¤º¸
     int heartCount;
@@ -81,12 +92,13 @@ public class GameManager : MonoBehaviour
             advancement = value;
             if (OnAdvancementUpdate != null)
                 OnAdvancementUpdate.Invoke();
+            
         }
     }
 
     private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(this.gameObject);
     }
 
     private void Start()
@@ -108,10 +120,34 @@ public class GameManager : MonoBehaviour
         OnAdvancementUpdate.AddListener(action);
     }
 
+    public void RemoveAdvancementUpdate(UnityAction action)
+    {
+        OnAdvancementUpdate.RemoveListener(action);
+    }
+
+    public void AddGameOver(UnityAction action)
+    {
+        OnGameOver.AddListener(action);
+    }
+
     void InitializeSetting()
     {
         HeartCount = 3;
         Score = 0;
         Advancement = 0;
+        combo = 0;
+        gameOver = false;
+        BossMode = false;
+        //OnHeartUpdate.RemoveAllListeners();
+        //OnScoreUpdate.RemoveAllListeners();
+        //OnAdvancementUpdate.RemoveAllListeners();
+        //OnComboUpdate.RemoveAllListeners();
+        //OnGameOver.RemoveAllListeners();
+    }
+
+    public void GameRestart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        InitializeSetting();
     }
 }

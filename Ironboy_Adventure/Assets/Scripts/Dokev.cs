@@ -16,12 +16,17 @@ public class Dokev : MonoBehaviour
 
     protected void Hit()
     {
-        GetComponent<Mover>().Move(false);
-        GetComponent<AudioSource>().Play();
-        animator.SetTrigger("Die");
-        GetComponent<Collider>().enabled = false;
         GameManager.Instance.Score += 100;
         GameManager.Instance.Combo += 1;
+        GetComponent<AudioSource>().Play();
+        Die();
+    }
+
+    protected void Die()
+    {
+        animator.SetTrigger("Die");
+        GetComponent<Mover>().Move(false);
+        GetComponent<Collider>().enabled = false;
         Destroy(gameObject, 2.0f);
     }
 

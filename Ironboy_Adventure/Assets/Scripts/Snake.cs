@@ -50,6 +50,7 @@ public class Snake : MonoBehaviour
             BeginAttackAnimation();
             yield return new WaitForSeconds(4.0f);
         }
+
         StartCoroutine(AttackSecond());
     }
 
@@ -88,6 +89,7 @@ public class Snake : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             ++state;
+            GetComponent<AudioSource>().Play();
             if(state < 3) animator.SetTrigger("Take Damage");
             else Die();
         }

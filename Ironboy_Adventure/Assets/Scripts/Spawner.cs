@@ -21,7 +21,9 @@ public class Spawner : MonoBehaviour
 
     IEnumerator Spawn()
     {
-        while(!GameManager.Instance.GameOver)
+        yield return new WaitForSeconds(4.0f);
+
+        while(!GameManager.Instance.GameOver && !GameManager.Instance.BossMode)
         {
             GameObject newEnemy = Instantiate(GetRandomEnemy(), transform);
 

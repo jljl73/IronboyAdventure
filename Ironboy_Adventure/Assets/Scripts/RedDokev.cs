@@ -5,7 +5,7 @@ using UnityEngine;
 public class RedDokev : Dokev
 {
     [SerializeField]
-    IA_PlayerSkillTrigger.SkillType type = IA_PlayerSkillTrigger.SkillType.HorizontalAttack;
+    IA_PlayerSkillTrigger.SkillType type = IA_PlayerSkillTrigger.SkillType.VerticalAttack;
 
     void OnTriggerEnter(Collider other)
     {
@@ -17,6 +17,6 @@ public class RedDokev : Dokev
         else if (other.CompareTag("Player"))
             Attack();
         else if (other.CompareTag("FireOfDeath"))
-            Hit();
+            Die();
     }
 }
