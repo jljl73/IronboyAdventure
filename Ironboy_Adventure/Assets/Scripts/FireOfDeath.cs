@@ -8,6 +8,8 @@ public class FireOfDeath : MonoBehaviour
     int[] advancements;
     [SerializeField]
     GameObject Fire;
+    [SerializeField]
+    GameObject Alert;
 
 
     int index = 0;
@@ -23,6 +25,7 @@ public class FireOfDeath : MonoBehaviour
 
         ++index;
         GetComponent<AudioSource>().Play();
+        StartCoroutine(Blink());
         Invoke("BeginFire", 3.0f);
     }
 
@@ -35,5 +38,15 @@ public class FireOfDeath : MonoBehaviour
     void EndFire()
     {
         Fire.SetActive(false);
+        Alert.SetActive(false);
+    }
+
+    IEnumerator Blink()
+    {
+        for(int i = 0; i < 6; ++i)
+        {
+            Alert.SetActive(!Alert.activeSelf);
+            yield return new WaitForSeconds(duration/6);
+        }
     }
 }

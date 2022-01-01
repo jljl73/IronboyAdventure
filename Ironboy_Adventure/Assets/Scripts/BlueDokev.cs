@@ -18,5 +18,7 @@ public class BlueDokev : Dokev
             Attack();
         else if (other.CompareTag("FireOfDeath"))
             Die();
+        else if (other.CompareTag("Alert"))
+            StartCoroutine(Blink());
     }
 }

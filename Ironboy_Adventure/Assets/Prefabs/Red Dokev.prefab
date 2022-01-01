@@ -1123,6 +1123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
+  meshRenderer: {fileID: 3751266538814634590}
 --- !u!114 &2053702258778043703
 MonoBehaviour:
   m_ObjectHideFlags: 0
