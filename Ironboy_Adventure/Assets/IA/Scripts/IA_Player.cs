@@ -244,13 +244,13 @@ public class IA_Player : MonoBehaviour
         {
             Anim_Guard = true;
             Effect.SetActive(true);
-            SpecialGaurd = false;
+            SpecialGaurd = true;
         }
         else if (Input.GetKeyUp(KeyCode.R))
         {
             Anim_Guard = false;
             Effect.SetActive(false);
-            SpecialGaurd = true;
+            SpecialGaurd = false;
         }
 
 
@@ -287,6 +287,14 @@ public class IA_Player : MonoBehaviour
         }
         else if(other.CompareTag("Fireball") && JumpTime == 0.0f)
             Damaged(1);
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("FireOfDeath") && !SpecialGaurd)
+        {
+            Damaged(2);
+        }
     }
 
 }
