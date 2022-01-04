@@ -150,4 +150,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         InitializeSetting();
     }
+
+    public void ChangeScene(string name)
+    {
+        SceneManager.LoadScene(name);
+    }
 }
