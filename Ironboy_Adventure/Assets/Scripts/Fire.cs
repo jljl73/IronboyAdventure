@@ -40,5 +40,6 @@ public class Fire : MonoBehaviour
             Destroy(gameObject);
         else
             ChangeDirectionReverse();
+
     }
 }

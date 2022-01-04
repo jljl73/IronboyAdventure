@@ -22,6 +22,9 @@ public class UIManager : MonoBehaviour
     [SerializeField]
     ComboUI comboUI;
 
+    [SerializeField]
+    GameObject GameOverPanel;
+
     private void Awake()
     {
         GameManager.Instance.uiManager = this;
@@ -31,6 +34,8 @@ public class UIManager : MonoBehaviour
 
         if (scoreUI == null)
             throw new System.Exception("UIManager doesnt have ScoreUI");
+
+        GameManager.Instance.AddGameOver(OnGameOver);
     }
     public void OnLifeUIUpdate()
     {
@@ -54,5 +59,15 @@ public class UIManager : MonoBehaviour
     public void OnComboUpdate()
     {
         comboUI.OnComboUIUpdate();
+    }
+
+    public void OnGameOver()
+    {
+        GameOverPanel.SetActive(true);
+    }
+
+    public void GameRestart()
+    {
+        GameManager.Instance.GameRestart();
     }
 }

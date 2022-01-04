@@ -5,7 +5,7 @@ using UnityEngine;
 public class BlueDokev : Dokev
 {
     [SerializeField]
-    IA_PlayerSkillTrigger.SkillType type = IA_PlayerSkillTrigger.SkillType.VerticalAttack;
+    IA_PlayerSkillTrigger.SkillType type = IA_PlayerSkillTrigger.SkillType.HorizontalAttack;
 
     void OnTriggerEnter(Collider other)
     {
@@ -17,6 +17,8 @@ public class BlueDokev : Dokev
         else if (other.CompareTag("AttackTrigger"))
             Attack();
         else if (other.CompareTag("FireOfDeath"))
-            Hit();
+            Die();
+        else if (other.CompareTag("Alert"))
+            StartCoroutine(Blink());
     }
 }

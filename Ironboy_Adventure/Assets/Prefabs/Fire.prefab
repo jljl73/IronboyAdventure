@@ -5335,7 +5335,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
-  Direction: {x: 0, y: 0, z: 1}
+  Direction: {x: 0, y: 0, z: -1}
+  width: 1
 --- !u!114 &233774128781505231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5349,7 +5350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 10
-  type: 3
+  type: 2
   Reflectable: 0
 --- !u!65 &-2236371492446182925
 BoxCollider:

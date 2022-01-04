@@ -38,7 +38,10 @@ public class IA_Player : MonoBehaviour
     AudioClip VerticalAttack;
     [SerializeField]
     AudioClip HorizontalAttack;
-
+    [SerializeField]
+    AudioClip Hit;
+    [SerializeField]
+    GameObject Effect;
 
     [SerializeField]
     public int Hearts
@@ -65,6 +68,7 @@ public class IA_Player : MonoBehaviour
     Vector3 startPos;
     int currentRail = 0;
 
+    bool SpecialGaurd = false;
 
     Animator animator;
     #region Anim_Params
@@ -120,6 +124,9 @@ public class IA_Player : MonoBehaviour
             case "Horizontal":
                 GetComponent<AudioSource>().clip = HorizontalAttack;
                 break;
+            case "Hit":
+                GetComponent<AudioSource>().clip = Hit;
+                break;
         }
 
         GetComponent<AudioSource>().Play();
@@ -134,7 +141,7 @@ public class IA_Player : MonoBehaviour
         hurtTime = immortalTime;
         Hearts -= i;
         GameManager.Instance.Combo = 0;
-
+        PlaySound("Hit");
         if (Hearts <= 0)
         {
             Hearts = 0;
@@ -214,6 +221,10 @@ public class IA_Player : MonoBehaviour
         if(!GameOver)
             GameManager.Instance.Advancement += Time.deltaTime;
 
+        if (GameManager.Instance.BossMode)
+            transform.position = Vector3.zero;
+
+
 
         if (Input.GetKeyDown(KeyCode.Space) && TryJump())
             Anim_Jump = true;
@@ -231,13 +242,15 @@ public class IA_Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Anim_SpecialGuard = true;
-            GetComponent<Collider>().enabled = false;
+            Anim_Guard = true;
+            Effect.SetActive(true);
+            SpecialGaurd = false;
         }
         else if (Input.GetKeyUp(KeyCode.R))
         {
-            Anim_SpecialGuard = false;
-            GetComponent<Collider>().enabled = true;
+            Anim_Guard = false;
+            Effect.SetActive(false);
+            SpecialGaurd = true;
         }
 
 
@@ -250,12 +263,12 @@ public class IA_Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow))
             Anim_Running = !Anim_Running;
 
-        if(Input.GetKeyDown(KeyCode.RightArrow) && currentRail < 1 && Anim_Running)
+        if(Input.GetKeyDown(KeyCode.RightArrow) && currentRail < 1 && Anim_Running && !GameManager.Instance.BossMode)
         {
             //Anim_RunRight = true;
             MoveRight();
         }
-        else if(Input.GetKeyDown(KeyCode.LeftArrow) && currentRail > -1 && Anim_Running)
+        else if(Input.GetKeyDown(KeyCode.LeftArrow) && currentRail > -1 && Anim_Running && !GameManager.Instance.BossMode)
         {
             //Anim_RunLeft = true;
             MoveLeft();
@@ -268,7 +281,7 @@ public class IA_Player : MonoBehaviour
         {
             Damaged(1);
         }
-        else if (other.CompareTag("FireOfDeath"))
+        else if (other.CompareTag("FireOfDeath") && !SpecialGaurd)
         {
             Damaged(2);
         }

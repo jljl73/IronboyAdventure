@@ -5,7 +5,7 @@ using UnityEngine;
 public class Mover : MonoBehaviour
 {
     public float speed = 2.0f;
-    public Vector3 Direction = Vector3.forward;
+    public Vector3 Direction = new Vector3(0, 0, -1);
 
     public int width = 1;
     public int Width { get => width; }
