@@ -201,6 +201,8 @@ public class IA_Player : MonoBehaviour
 
     private void Update()
     {
+        
+
         if (hurtTime > 0.0f)
         {
             hurtTime -= Time.deltaTime;
@@ -222,7 +224,10 @@ public class IA_Player : MonoBehaviour
             GameManager.Instance.Advancement += Time.deltaTime;
 
         if (GameManager.Instance.BossMode)
+        {
             transform.position = Vector3.zero;
+            Anim_Running = false;
+        }
 
 
 

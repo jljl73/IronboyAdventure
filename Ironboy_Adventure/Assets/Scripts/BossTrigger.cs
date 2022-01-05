@@ -6,6 +6,8 @@ public class BossTrigger : MonoBehaviour
 {
     [SerializeField]
     GameObject boss;
+    [SerializeField]
+    GameObject progress;
 
     [SerializeField]
     Vector3 CameraRotation;
@@ -39,6 +41,7 @@ public class BossTrigger : MonoBehaviour
             Spawn = true;
             Camera.main.transform.rotation = Quaternion.Euler(CameraRotation);
             Camera.main.transform.Translate(Vector3.back);
+            progress.SetActive(false);
         }
     }
 

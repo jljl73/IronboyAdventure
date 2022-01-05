@@ -43,7 +43,7 @@ public class IA_PlayerExclamation : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (ignoreList != null && ignoreList.Contains(other))
+        if ((ignoreList != null && ignoreList.Contains(other)) || other.CompareTag("Enemy"))
             return;
 
         bubble.gameObject.SetActive(true);

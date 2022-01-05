@@ -18,6 +18,9 @@ public class Mover : MonoBehaviour
     
     void FixedUpdate()
     {
+        if (GameManager.Instance.BossMode && transform.tag != "Enemy")
+            return;
+
         if (isMoving && !GameManager.Instance.GameOver)
             transform.position += (Direction * speed * Time.deltaTime);
     }
@@ -37,5 +40,4 @@ public class Mover : MonoBehaviour
     {
         this.speed *= value;
     }
-
 }
