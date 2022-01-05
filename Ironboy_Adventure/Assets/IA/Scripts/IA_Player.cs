@@ -201,8 +201,6 @@ public class IA_Player : MonoBehaviour
 
     private void Update()
     {
-        
-
         if (hurtTime > 0.0f)
         {
             hurtTime -= Time.deltaTime;
