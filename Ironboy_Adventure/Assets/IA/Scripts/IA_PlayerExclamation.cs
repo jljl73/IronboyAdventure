@@ -8,7 +8,7 @@ public class IA_PlayerExclamation : MonoBehaviour
     [SerializeField]
     Collider trigger;
     [SerializeField]
-    Image bubble;
+    GameObject bubble;
     [SerializeField]
     List<Collider> ignoreList;
 
@@ -35,9 +35,9 @@ public class IA_PlayerExclamation : MonoBehaviour
         {
             timer -= Time.deltaTime;
 
-            bubble.transform.LookAt(
-                bubble.transform.position + cam.transform.rotation * Vector3.forward,
-                cam.transform.rotation * Vector3.up);
+            //bubble.transform.LookAt(
+            //    bubble.transform.position + cam.transform.rotation * Vector3.forward,
+            //    cam.transform.rotation * Vector3.up);
         }
     }
 
