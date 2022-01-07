@@ -119,14 +119,6 @@ public class GameManager : MonoBehaviour
         InitializeSetting();
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            advancement = 99;
-        }
-    }
-
     void ConnectEvents()
     {
         OnHeartUpdate.AddListener(uiManager.OnLifeUIUpdate);

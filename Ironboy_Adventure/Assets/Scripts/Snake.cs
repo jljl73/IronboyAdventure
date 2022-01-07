@@ -25,14 +25,6 @@ public class Snake : MonoBehaviour
         StartCoroutine(AttackFirst());
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            Die();
-        }
-    }
-
     void BeginAttackAnimation()
     {
         animator.SetTrigger("Projectile Attack Front");
