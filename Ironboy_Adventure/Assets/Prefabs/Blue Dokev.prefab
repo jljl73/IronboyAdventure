@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 598417895510374925}
   - component: {fileID: 598417895510374926}
   - component: {fileID: 633613782663464312}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Blue Dokev
   m_TagString: Enemy
   m_Icon: {fileID: 0}

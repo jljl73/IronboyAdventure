@@ -1365,6 +1365,10 @@ PrefabInstance:
       value: Snake Naga
       objectReference: {fileID: 0}
     - target: {fileID: 1036279830460860700, guid: 94b7a263522564c488cf57368d7c1ad0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1036279830460860700, guid: 94b7a263522564c488cf57368d7c1ad0, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1613,6 +1617,10 @@ PrefabInstance:
       value: Blue Dokev
       objectReference: {fileID: 0}
     - target: {fileID: 7501671384287734060, guid: 21f3dbb473c7dd046803a2c56f96031c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501671384287734060, guid: 21f3dbb473c7dd046803a2c56f96031c, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1837,6 +1845,10 @@ PrefabInstance:
     - target: {fileID: 3886405358078625770, guid: e76d7cbe55e1cdb4790dd0b26cded94f, type: 3}
       propertyPath: m_Name
       value: Red Dokev
+      objectReference: {fileID: 0}
+    - target: {fileID: 3886405358078625770, guid: e76d7cbe55e1cdb4790dd0b26cded94f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3886405358078625770, guid: e76d7cbe55e1cdb4790dd0b26cded94f, type: 3}
       propertyPath: m_IsActive
@@ -2296,6 +2308,10 @@ PrefabInstance:
     - target: {fileID: 7094857319013762815, guid: 899874d7ce87c6c4f9cb365e8467c33a, type: 3}
       propertyPath: m_Name
       value: FireBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 7094857319013762815, guid: 899874d7ce87c6c4f9cb365e8467c33a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7094857319013762815, guid: 899874d7ce87c6c4f9cb365e8467c33a, type: 3}
       propertyPath: m_IsActive

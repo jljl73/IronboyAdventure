@@ -1069,7 +1069,7 @@ GameObject:
   - component: {fileID: 6036125618121212610}
   - component: {fileID: 6036125618121212613}
   - component: {fileID: 8464655871346817980}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Red Dokev
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1123,7 +1123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
-  meshRenderer: {fileID: 3751266538814634590}
 --- !u!114 &2053702258778043703
 MonoBehaviour:
   m_ObjectHideFlags: 0

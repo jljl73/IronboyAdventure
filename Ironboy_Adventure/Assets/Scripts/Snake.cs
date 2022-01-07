@@ -25,6 +25,9 @@ public class Snake : MonoBehaviour
         StartCoroutine(AttackFirst());
     }
 
+
+
+
     void BeginAttackAnimation()
     {
         animator.SetTrigger("Projectile Attack Front");
@@ -48,6 +51,8 @@ public class Snake : MonoBehaviour
             Reflectable = (count == nAttack[0]) ? true : false;
             BeginAttackAnimation();
             yield return new WaitForSeconds(4.0f);
+
+            if (Reflectable) count = 0;
         }
 
         StartCoroutine(AttackSecond());
@@ -62,6 +67,7 @@ public class Snake : MonoBehaviour
             Reflectable = (count == nAttack[1]) ? true : false;
             BeginAttackAnimation();
             yield return new WaitForSeconds(4.0f);
+            if (Reflectable) count = 0;
         }
         StartCoroutine(AttackThird());
     }
@@ -75,6 +81,7 @@ public class Snake : MonoBehaviour
             Reflectable = (count == nAttack[2]) ? true : false;
             BeginAttackAnimation();
             yield return new WaitForSeconds(4.0f);
+            if (Reflectable) count = 0;
         }
     }
 
