@@ -25,6 +25,14 @@ public class Snake : MonoBehaviour
         StartCoroutine(AttackFirst());
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            Die();
+        }
+    }
+
     void BeginAttackAnimation()
     {
         animator.SetTrigger("Projectile Attack Front");
@@ -38,7 +46,6 @@ public class Snake : MonoBehaviour
         projectile.GetComponent<Mover>().MulSpeed(Speed[state]);
         projectile.GetComponent<Fire>().Reflectable = Reflectable;
     }
-
 
     IEnumerator AttackFirst()
     {
@@ -82,6 +89,12 @@ public class Snake : MonoBehaviour
     void Die()
     {
         animator.SetTrigger("Die");
+        Invoke("EndGame", 2f);
+    }
+
+    void EndGame()
+    {
+        GameManager.Instance.ChangeScene("End");
     }
 
     void OnTriggerEnter(Collider other)
