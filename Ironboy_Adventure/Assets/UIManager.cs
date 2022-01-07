@@ -48,6 +48,7 @@ public class UIManager : MonoBehaviour
 
     public void OnScoreUIUpdate()
     {
+        print("Im in UIMANAGER OnScoreUIUpdate");
         scoreUI.OnScoreUIUpdate();
     }
 

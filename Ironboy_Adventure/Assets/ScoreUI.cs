@@ -15,6 +15,11 @@ public class ScoreUI : MonoBehaviour
             throw new System.Exception("UIManager doesnt have TextMeshProUGUI");
     }
 
+    void Start()
+    {
+        OnScoreUIUpdate();
+    }
+
     public void OnScoreUIUpdate()
     {
         int score = GameManager.Instance.Score;
@@ -32,5 +37,6 @@ public class ScoreUI : MonoBehaviour
         }
 
         scoreTextMesh.text = scoreText;
+        print("Im in scoreUII");
     }
 }

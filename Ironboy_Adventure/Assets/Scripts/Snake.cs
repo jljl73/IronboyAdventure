@@ -39,7 +39,6 @@ public class Snake : MonoBehaviour
         projectile.GetComponent<Fire>().Reflectable = Reflectable;
     }
 
-
     IEnumerator AttackFirst()
     {
         int count = 0;
@@ -82,6 +81,12 @@ public class Snake : MonoBehaviour
     void Die()
     {
         animator.SetTrigger("Die");
+        Invoke("EndGame", 2f);
+    }
+
+    void EndGame()
+    {
+        GameManager.Instance.ChangeScene("End");
     }
 
     void OnTriggerEnter(Collider other)

@@ -64,8 +64,14 @@ public class GameManager : MonoBehaviour
             score = value;
             if (score <= 0)
                 score = 0;
+            print("score changed!: " + score);
             if (OnScoreUpdate != null)
+            {
+                print("Listener count: " + OnScoreUpdate.GetPersistentEventCount());
                 OnScoreUpdate.Invoke();
+
+                print("OnScoreUpdate.Invoke();");
+            }
         }
     }
     int combo;
@@ -96,13 +102,19 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Awake()
+    void Awake()
     {
-        //DontDestroyOnLoad(this.gameObject);
+        if (_instance != null)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+        DontDestroyOnLoad(this.gameObject);
     }
 
-    private void Start()
+    void Start()
     {
+        print("Start");
         ConnectEvents();
         InitializeSetting();
     }
@@ -133,7 +145,7 @@ public class GameManager : MonoBehaviour
     void InitializeSetting()
     {
         HeartCount = 3;
-        Score = 0;
+        Score = 0    ;
         Advancement = 0;
         combo = 0;
         gameOver = false;
@@ -148,7 +160,8 @@ public class GameManager : MonoBehaviour
     public void GameRestart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        InitializeSetting();
+        Invoke("ConnectEvents", 0.5f);
+        Invoke("InitializeSetting", 0.5f);
     }
 
     public void ChangeScene(string name)
